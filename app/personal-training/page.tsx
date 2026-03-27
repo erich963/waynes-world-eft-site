@@ -56,7 +56,7 @@ export default function PersonalTrainingPage() {
     <>
       {/* Hero */}
       <section className="page-hero">
-        <div className="container-content max-w-4xl">
+        <div className="container-content">
           <p className="section-label">Lebanon, NH · Upper Valley</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-gray-900">
             Personal Training
