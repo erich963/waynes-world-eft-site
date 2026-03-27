@@ -133,7 +133,7 @@ export default function HomePage() {
               </p>
               <p className="text-brand-red font-semibold text-sm uppercase tracking-widest drop-shadow">
                 — Wayne Burwell<br />
-                <span className="text-red-300 normal-case tracking-normal font-normal text-xs">
+                <span className="text-white normal-case tracking-normal font-normal text-xs">
                   Founder / Owner and Personal Trainer
                 </span>
               </p>
