@@ -40,10 +40,10 @@ export default function WellnessPage() {
       <section className="page-hero">
         <div className="container-content max-w-4xl">
           <p className="section-label">Lebanon, NH</p>
-          <h1 className="text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-5xl font-bold mb-4 leading-tight text-gray-900">
             Wellness & Body Transformation
           </h1>
-          <p className="text-gray-300 text-xl max-w-2xl leading-relaxed">
+          <p className="text-gray-600 text-xl max-w-2xl leading-relaxed">
             A comprehensive program combining strength, accountability, and
             lifestyle coaching — designed for real, sustainable results.
           </p>
@@ -110,14 +110,14 @@ export default function WellnessPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-dark">
+      <section className="section-accent">
         <div className="container-content text-center">
-          <h2 className="section-title-white">Ready to Make a Change?</h2>
-          <p className="text-gray-400 mb-8 max-w-lg mx-auto">
+          <h2 className="section-title">Ready to Make a Change?</h2>
+          <p className="text-gray-600 mb-8 max-w-lg mx-auto">
             The Wellness Program is built for people who are serious about
             lasting results. Let&apos;s talk about what that looks like for you.
           </p>
-          <Link href="/contact" className="btn-outline">
+          <Link href="/contact" className="btn-primary">
             Get Started
           </Link>
         </div>

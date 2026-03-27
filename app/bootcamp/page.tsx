@@ -28,10 +28,10 @@ export default function BootcampPage() {
       <section className="page-hero">
         <div className="container-content max-w-4xl">
           <p className="section-label">Lebanon, NH</p>
-          <h1 className="text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-5xl font-bold mb-4 leading-tight text-gray-900">
             Bootcamp Classes
           </h1>
-          <p className="text-gray-300 text-xl max-w-2xl leading-relaxed">
+          <p className="text-gray-600 text-xl max-w-2xl leading-relaxed">
             High-energy, full-body workouts designed to build strength, improve
             conditioning, and keep you accountable.
           </p>
@@ -84,7 +84,7 @@ export default function BootcampPage() {
         <div className="container-content max-w-2xl">
           <p className="section-label text-center">Pricing</p>
           <h2 className="section-title text-center mb-8">Session Packages</h2>
-          <div className="bg-white rounded-sm shadow-sm overflow-hidden">
+          <div className="bg-white rounded-sm shadow-sm overflow-hidden border border-gray-100">
             {pricing.map((p, i) => (
               <div
                 key={p.label}
@@ -111,7 +111,7 @@ export default function BootcampPage() {
         </div>
       </section>
 
-      {/* Testimonial */}
+      {/* Testimonial — intentional dark contrast moment */}
       <section className="section-dark">
         <div className="container-content max-w-2xl text-center">
           <p className="text-gray-300 text-xl italic leading-relaxed mb-4">
@@ -123,7 +123,7 @@ export default function BootcampPage() {
       </section>
 
       {/* CTA */}
-      <section className="section">
+      <section className="section-accent">
         <div className="container-content text-center">
           <h2 className="section-title">Your First Class Is Free</h2>
           <p className="text-gray-600 mb-8 max-w-lg mx-auto">

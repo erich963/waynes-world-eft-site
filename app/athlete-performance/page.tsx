@@ -30,10 +30,10 @@ export default function AthletePerformancePage() {
       <section className="page-hero">
         <div className="container-content max-w-4xl">
           <p className="section-label">Upper Valley, NH</p>
-          <h1 className="text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-5xl font-bold mb-4 leading-tight text-gray-900">
             Athlete Performance Training
           </h1>
-          <p className="text-gray-300 text-xl max-w-2xl leading-relaxed">
+          <p className="text-gray-600 text-xl max-w-2xl leading-relaxed">
             Strength, speed, and performance coaching for athletes at every
             level — backed by science, built on experience.
           </p>
@@ -97,29 +97,29 @@ export default function AthletePerformancePage() {
       </section>
 
       {/* Coach Cred */}
-      <section className="section-dark">
-        <div className="container-content max-w-3xl text-center">
-          <p className="text-brand-red text-sm font-semibold uppercase tracking-widest mb-4">
-            Coaching Pedigree
-          </p>
-          <h2 className="section-title-white mb-6">
-            Trained by Someone Who Has Done It at the Highest Level
-          </h2>
-          <p className="text-gray-300 leading-relaxed mb-2">
-            Wayne Burwell (USAW · CSCS · NASM) has been coaching since 1999 and has
-            worked with professional athletes, Olympians, and elite coaches across
-            sports. He is a Dartmouth College graduate (Class of 1997).
-          </p>
-          <p className="text-gray-400 text-sm mt-4 leading-relaxed">
-            The Wayne&apos;s World training staff also includes coaches with backgrounds
-            in competitive powerlifting, professional triathlon and ultrarunning, and
-            sport-specific athletic development.
-          </p>
+      <section className="section">
+        <div className="container-content max-w-3xl">
+          <div className="border-l-4 border-brand-red pl-8">
+            <p className="section-label">Coaching Pedigree</p>
+            <h2 className="section-title">
+              Trained by Someone Who Has Done It at the Highest Level
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Wayne Burwell (USAW · CSCS · NASM) has been coaching since 1999 and has
+              worked with professional athletes, Olympians, and elite coaches across
+              sports. He is a Dartmouth College graduate (Class of 1997).
+            </p>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              The Wayne&apos;s World training staff also includes coaches with backgrounds
+              in competitive powerlifting, professional triathlon and ultrarunning, and
+              sport-specific athletic development.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section">
+      <section className="section-accent">
         <div className="container-content text-center">
           <h2 className="section-title">Start Your Off-Season the Right Way</h2>
           <p className="text-gray-600 mb-8 max-w-lg mx-auto">

@@ -21,7 +21,7 @@ const trainers = [
   {
     name: 'Devin Mulac',
     certs: 'CSCS · PES · Pn1 · BS Exercise Science',
-    bio: 'Experienced with youth athletes, adults, and individuals with Parkinson\'s. Devin brings a science-backed approach to programming with credentials spanning strength, performance, and nutrition.',
+    bio: "Experienced with youth athletes, adults, and individuals with Parkinson's. Devin brings a science-backed approach to programming with credentials spanning strength, performance, and nutrition.",
   },
   {
     name: 'Alyssa Godesky',
@@ -45,10 +45,10 @@ export default function PersonalTrainingPage() {
       <section className="page-hero">
         <div className="container-content max-w-4xl">
           <p className="section-label">Lebanon, NH</p>
-          <h1 className="text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-5xl font-bold mb-4 leading-tight text-gray-900">
             Personal Training
           </h1>
-          <p className="text-gray-300 text-xl max-w-2xl leading-relaxed">
+          <p className="text-gray-600 text-xl max-w-2xl leading-relaxed">
             Customized coaching built around your goals, your schedule, and your
             starting point.
           </p>
@@ -130,14 +130,14 @@ export default function PersonalTrainingPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-dark">
+      <section className="section-accent">
         <div className="container-content text-center">
-          <h2 className="section-title-white">Ready to Start?</h2>
-          <p className="text-gray-400 mb-8 max-w-lg mx-auto">
+          <h2 className="section-title">Ready to Start?</h2>
+          <p className="text-gray-600 mb-8 max-w-lg mx-auto">
             Tell us about your goals and we&apos;ll match you with the right coach
             and program.
           </p>
-          <Link href="/contact" className="btn-outline">
+          <Link href="/contact" className="btn-primary">
             Get In Touch
           </Link>
         </div>

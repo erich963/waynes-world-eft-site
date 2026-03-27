@@ -13,10 +13,10 @@ export default function ContactPage() {
       <section className="page-hero">
         <div className="container-content max-w-4xl">
           <p className="section-label">Lebanon, NH</p>
-          <h1 className="text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-5xl font-bold mb-4 leading-tight text-gray-900">
             Get In Touch
           </h1>
-          <p className="text-gray-300 text-xl max-w-2xl leading-relaxed">
+          <p className="text-gray-600 text-xl max-w-2xl leading-relaxed">
             Ready to start? Have questions? We&apos;d love to hear from you.
             Your first bootcamp class is free.
           </p>
@@ -144,9 +144,9 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="bg-brand-red text-white p-6 rounded-sm">
-                  <h3 className="font-bold text-lg mb-2">First Class Is Free</h3>
-                  <p className="text-red-100 text-sm leading-relaxed">
+                <div className="border-l-4 border-brand-red pl-6 py-2">
+                  <h3 className="font-bold text-gray-900 text-lg mb-2">First Class Is Free</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     Try a bootcamp class with zero commitment. Show up, work
                     hard, and see what Wayne&apos;s World is about.
                   </p>

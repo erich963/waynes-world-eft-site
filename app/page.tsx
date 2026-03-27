@@ -72,13 +72,13 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-brand-dark text-white py-28 px-6">
+      <section className="bg-white py-28 px-6 border-b border-gray-100">
         <div className="container-content max-w-4xl">
           <p className="section-label">Lebanon, NH · Upper Valley</p>
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
             Elite Fitness Training<br />in the Upper Valley
           </h1>
-          <p className="text-gray-300 text-xl mb-8 max-w-2xl leading-relaxed">
+          <p className="text-gray-600 text-xl mb-8 max-w-2xl leading-relaxed">
             Personal training, bootcamps, and athlete performance coaching —
             built around results, accountability, and real community.
           </p>
@@ -97,14 +97,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mission bar */}
-      <section className="bg-brand-red text-white py-8 px-6">
-        <div className="container-content text-center">
-          <p className="text-lg font-medium max-w-3xl mx-auto">
-            &ldquo;My mission at Wayne&apos;s World EFT is to educate you on the advantages
-            of a lifestyle of good health and individual fitness.&rdquo;
-          </p>
-          <p className="text-sm mt-2 text-red-200">— Wayne Burwell, Founder</p>
+      {/* Mission quote */}
+      <section className="bg-gray-50 py-12 px-6 border-l-0">
+        <div className="container-content max-w-3xl">
+          <div className="border-l-4 border-brand-red pl-8">
+            <p className="text-2xl font-medium text-gray-900 leading-relaxed">
+              &ldquo;My mission at Wayne&apos;s World EFT is to educate you on the advantages
+              of a lifestyle of good health and individual fitness.&rdquo;
+            </p>
+            <p className="text-brand-red font-semibold text-sm mt-4 uppercase tracking-widest">
+              — Wayne Burwell, Founder
+            </p>
+          </div>
         </div>
       </section>
 
@@ -182,8 +186,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Local SEO / Trust */}
-      <section className="section">
+      {/* Local SEO / CTA */}
+      <section className="section-accent">
         <div className="container-content text-center max-w-3xl">
           <p className="section-label">Lebanon, NH</p>
           <h2 className="section-title">
