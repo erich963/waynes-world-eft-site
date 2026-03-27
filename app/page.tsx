@@ -92,7 +92,7 @@ export default function HomePage() {
             src="/images/hero-wayne-official.jpg"
             alt="Wayne Burwell — Wayne's World Elite Fitness Training"
             fill
-            className="object-cover object-center"
+            className="object-cover object-[center_20%]"
             priority
           />
           {/* Gradient fade from transparent (left) to dark (right) */}
