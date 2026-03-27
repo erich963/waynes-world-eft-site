@@ -77,12 +77,37 @@ export default function HomePage() {
   return (
     <>
       {/* Welcome heading */}
-      <section className="bg-white pt-16 pb-6 px-6">
+      <section className="bg-white pt-16 pb-4 px-6">
         <div className="container-content text-center">
-          <p className="section-label">Lebanon, NH · Upper Valley</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Welcome to Your New Fitness Family
           </h1>
+        </div>
+      </section>
+
+      {/* Elite Fitness Training — sits above Wayne's photo */}
+      <section className="bg-white pt-8 pb-16 px-6 border-b border-gray-100">
+        <div className="container-content max-w-4xl">
+          <p className="section-label">Lebanon, NH · Upper Valley</p>
+          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
+            Elite Fitness Training<br />in the Upper Valley
+          </h2>
+          <p className="text-gray-600 text-xl mb-8 max-w-xl leading-relaxed">
+            Personal training, bootcamps, and athlete performance coaching —
+            built around results, accountability, and real community.
+          </p>
+          <p className="text-sm text-gray-400 mb-10 italic">
+            Trusted by professional athletes, Olympians, high school and college athletes,
+            and adults across the Upper Valley.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Link href="/contact" className="btn-primary">
+              Get Started
+            </Link>
+            <Link href="/bootcamp" className="btn-outline">
+              See Bootcamp
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -113,31 +138,6 @@ export default function HomePage() {
                 </span>
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Elite Fitness Training — main CTA section */}
-      <section className="bg-white py-20 px-6 border-b border-gray-100">
-        <div className="container-content max-w-4xl">
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
-            Elite Fitness Training<br />in the Upper Valley
-          </h2>
-          <p className="text-gray-600 text-xl mb-8 max-w-xl leading-relaxed">
-            Personal training, bootcamps, and athlete performance coaching —
-            built around results, accountability, and real community.
-          </p>
-          <p className="text-sm text-gray-400 mb-10 italic">
-            Trusted by professional athletes, Olympians, high school and college athletes,
-            and adults across the Upper Valley.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/contact" className="btn-primary">
-              Get Started
-            </Link>
-            <Link href="/bootcamp" className="btn-outline">
-              See Bootcamp
-            </Link>
           </div>
         </div>
       </section>
