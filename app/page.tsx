@@ -103,7 +103,7 @@ export default function HomePage() {
             {/* Photo */}
             <div className="relative min-h-[400px] lg:min-h-0">
               <Image
-                src="/images/hero-wayne.jpeg"
+                src="/images/hero-wayne-official.jpg"
                 alt="Wayne Burwell — Wayne's World Elite Fitness Training"
                 fill
                 className="object-cover"

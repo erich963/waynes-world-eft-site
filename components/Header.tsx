@@ -8,8 +8,8 @@ import { usePathname } from 'next/navigation'
 const navLinks = [
   { href: '/bootcamp', label: 'Bootcamp' },
   { href: '/personal-training', label: 'Personal Training' },
-  { href: '/athlete-performance', label: 'Athlete Performance' },
-  { href: '/wellness', label: 'Wellness' },
+  { href: '/wellness', label: 'Wellness Program' },
+  { href: '/athlete-performance', label: 'Athlete Training' },
   { href: '/about', label: 'About' },
 ]
 
@@ -18,30 +18,27 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="bg-brand-dark sticky top-0 z-50 shadow-md">
+    <header className="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-200">
       <div className="container-content flex items-center justify-between h-28 px-6">
-        {/* Logo — full wordmark on md+, shield only on mobile */}
+
+        {/* Logo — no badge needed on white bg */}
         <Link href="/" className="flex items-center shrink-0">
-          <div className="bg-white rounded-sm p-2 hidden md:flex items-center justify-center">
-            <Image
-              src="/images/logo-full.png"
-              alt="Wayne's World Elite Fitness Training"
-              width={300}
-              height={72}
-              className="object-contain"
-              priority
-            />
-          </div>
-          <div className="bg-white rounded-sm p-2 flex items-center justify-center md:hidden">
-            <Image
-              src="/images/logo.png"
-              alt="Wayne's World Elite Fitness Training"
-              width={88}
-              height={88}
-              className="object-contain"
-              priority
-            />
-          </div>
+          <Image
+            src="/images/logo-full.png"
+            alt="Wayne's World Elite Fitness Training"
+            width={300}
+            height={72}
+            className="object-contain hidden md:block"
+            priority
+          />
+          <Image
+            src="/images/logo.png"
+            alt="Wayne's World Elite Fitness Training"
+            width={88}
+            height={88}
+            className="object-contain md:hidden"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -53,7 +50,7 @@ export default function Header() {
               className={`text-sm font-medium transition-colors duration-150 ${
                 pathname === href
                   ? 'text-brand-red'
-                  : 'text-gray-300 hover:text-white'
+                  : 'text-gray-600 hover:text-gray-900'
               }`}
             >
               {label}
@@ -67,7 +64,7 @@ export default function Header() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden text-white p-2"
+          className="lg:hidden text-gray-800 p-2"
           aria-label="Toggle menu"
         >
           <svg
@@ -97,7 +94,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-brand-gray border-t border-gray-700 px-6 py-4">
+        <div className="lg:hidden bg-white border-t border-gray-200 px-6 py-4">
           <nav className="flex flex-col gap-4">
             {navLinks.map(({ href, label }) => (
               <Link
@@ -107,7 +104,7 @@ export default function Header() {
                 className={`text-sm font-medium transition-colors ${
                   pathname === href
                     ? 'text-brand-red'
-                    : 'text-gray-300 hover:text-white'
+                    : 'text-gray-700 hover:text-gray-900'
                 }`}
               >
                 {label}
