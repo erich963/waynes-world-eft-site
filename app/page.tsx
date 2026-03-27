@@ -85,32 +85,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Elite Fitness Training — sits above Wayne's photo */}
-      <section className="bg-white pt-8 pb-16 px-6 border-b border-gray-100">
-        <div className="container-content max-w-4xl">
-          <p className="section-label">Lebanon, NH · Upper Valley</p>
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
-            Elite Fitness Training<br />in the Upper Valley
-          </h2>
-          <p className="text-gray-600 text-xl mb-8 max-w-xl leading-relaxed">
-            Personal training, bootcamps, and athlete performance coaching —
-            built around results, accountability, and real community.
-          </p>
-          <p className="text-sm text-gray-400 mb-10 italic">
-            Trusted by professional athletes, Olympians, high school and college athletes,
-            and adults across the Upper Valley.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/contact" className="btn-primary">
-              Get Started
-            </Link>
-            <Link href="/bootcamp" className="btn-outline">
-              See Bootcamp
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Wayne's photo — full width with mission text overlay on right */}
       <section className="bg-white pb-0">
         <div className="relative w-full h-[420px] md:h-[560px]">
@@ -138,6 +112,32 @@ export default function HomePage() {
                 </span>
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Elite Fitness Training — below Wayne's photo */}
+      <section className="bg-white pt-8 pb-16 px-6 border-b border-gray-100">
+        <div className="container-content max-w-4xl">
+          <p className="section-label">Lebanon, NH · Upper Valley</p>
+          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
+            Elite Fitness Training<br />in the Upper Valley
+          </h2>
+          <p className="text-gray-600 text-xl mb-8 max-w-xl leading-relaxed">
+            Personal training, bootcamps, and athlete performance coaching —
+            built around results, accountability, and real community.
+          </p>
+          <p className="text-sm text-gray-400 mb-10 italic">
+            Trusted by professional athletes, Olympians, high school and college athletes,
+            and adults across the Upper Valley.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Link href="/contact" className="btn-primary">
+              Get Started
+            </Link>
+            <Link href="/bootcamp" className="btn-outline">
+              See Bootcamp
+            </Link>
           </div>
         </div>
       </section>
@@ -204,7 +204,7 @@ export default function HomePage() {
           {/* Group photo — no overlay so it's clear */}
           <div className="relative w-full h-72 md:h-96 mb-12 rounded-sm overflow-hidden">
             <Image
-              src="/images/community.jpeg"
+              src="/images/community-new.jpg"
               alt="Wayne's World EFT community — Lebanon, NH"
               fill
               className="object-cover object-center"
