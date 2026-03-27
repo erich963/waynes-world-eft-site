@@ -24,7 +24,7 @@ export default function Header() {
         {/* Logo — no badge needed on white bg */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
-            src="/images/logo-full.png"
+            src="/images/logo-full-cropped.png"
             alt="Wayne's World Elite Fitness Training"
             width={300}
             height={72}
