@@ -5,13 +5,27 @@ import { useState, useEffect } from 'react'
 const testimonials = [
   {
     quote:
-      "Wayne's World provides a high caliber fitness experience. Wayne and his team are outstanding trainers.",
-    name: 'Laura D.',
+      "I owe a great deal of my success to Wayne, and would definitely recommend his gym to every young hockey player and athlete in the Upper Valley.",
+    name: 'Ben Lovejoy',
+    title: 'Former NHL Defenseman & Dartmouth Hockey / Lacrosse Player',
+  },
+  {
+    quote:
+      "The results from working with Wayne were absolutely amazing! I could very quickly notice that my health was returning. I lost body fat and felt stronger and more energetic within a few weeks. It wasn't easy but it was definitely worth it.",
+    name: 'Joe S.',
+    title: null,
   },
   {
     quote:
       'The naturally occurring mentorship that develops between the regulars holds you psychologically accountable and motivated to stay focused.',
     name: 'Kylie M.',
+    title: null,
+  },
+  {
+    quote:
+      "Wayne's World provides a high caliber fitness experience. Wayne and his team are outstanding trainers.",
+    name: 'Laura D.',
+    title: null,
   },
 ]
 
@@ -34,12 +48,17 @@ export default function TestimonialsCarousel() {
     <div className="max-w-3xl mx-auto">
       {/* Card */}
       <div className="bg-brand-gray p-10 rounded-sm border border-gray-700 min-h-[180px] flex flex-col justify-center">
-        <p className="text-gray-300 text-xl leading-relaxed mb-6 italic text-center">
+        <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-6 italic text-center">
           &ldquo;{testimonials[current].quote}&rdquo;
         </p>
         <p className="text-brand-red font-semibold text-sm text-center uppercase tracking-widest">
           — {testimonials[current].name}
         </p>
+        {testimonials[current].title && (
+          <p className="text-gray-500 text-xs text-center mt-1 normal-case tracking-normal">
+            {testimonials[current].title}
+          </p>
+        )}
       </div>
 
       {/* Controls */}
