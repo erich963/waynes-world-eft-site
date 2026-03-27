@@ -77,7 +77,7 @@ export default function HomePage() {
   return (
     <>
       {/* Welcome heading */}
-      <section className="bg-white pt-16 pb-4 px-6">
+      <section className="bg-white pt-16 pb-14 px-6">
         <div className="container-content text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Welcome to Your New Fitness Family
@@ -99,9 +99,9 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/80" />
 
           {/* Text overlay — right side */}
-          <div className="absolute inset-0 flex items-center justify-end px-8 md:px-16">
-            <div className="max-w-sm md:max-w-md text-right">
-              <p className="text-white text-lg md:text-xl leading-relaxed italic mb-4 drop-shadow">
+          <div className="absolute inset-0 flex items-end md:items-center justify-end px-6 pb-6 md:pb-0 md:px-16">
+            <div className="max-w-xs md:max-w-md text-right">
+              <p className="text-white text-sm md:text-lg lg:text-xl leading-relaxed italic mb-3 md:mb-4 drop-shadow">
                 &ldquo;My mission at Wayne&apos;s World EFT is to help you understand the value
                 of a healthy lifestyle and the power of personal fitness.&rdquo;
               </p>
@@ -120,7 +120,7 @@ export default function HomePage() {
       <section className="bg-white pt-8 pb-16 px-6 border-b border-gray-100">
         <div className="container-content max-w-4xl">
           <p className="section-label">Lebanon, NH · Upper Valley</p>
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-gray-900">
             Elite Fitness Training<br />in the Upper Valley
           </h2>
           <p className="text-gray-600 text-xl mb-8 max-w-xl leading-relaxed">
