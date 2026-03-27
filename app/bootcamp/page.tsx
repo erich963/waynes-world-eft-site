@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "Bootcamp Classes in Lebanon, NH | Wayne's World EFT",
@@ -37,6 +38,17 @@ export default function BootcampPage() {
           </p>
         </div>
       </section>
+
+      {/* Action photo */}
+      <div className="relative w-full h-64 md:h-[420px] overflow-hidden">
+        <Image
+          src="/images/bootcamp-class.jpg"
+          alt="Wayne Burwell coaching a bootcamp class at Wayne's World EFT"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+      </div>
 
       {/* What Is It */}
       <section className="section">

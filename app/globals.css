@@ -37,7 +37,7 @@
     @apply max-w-6xl mx-auto;
   }
   .page-hero {
-    @apply bg-white text-brand-dark py-16 md:py-24 px-4 md:px-6 border-b border-gray-100;
+    @apply bg-white text-brand-dark pt-14 md:pt-20 pb-6 md:pb-10 px-4 md:px-6 border-b border-gray-100;
   }
   .section-label {
     @apply block text-brand-red text-xs md:text-sm font-semibold uppercase tracking-widest mb-3;

@@ -82,12 +82,12 @@ export default function AboutPage() {
           <h2 className="section-title text-center mb-10">Our Coaches</h2>
 
           {/* Community photo */}
-          <div className="relative w-full h-64 md:h-80 mb-12 rounded-sm overflow-hidden shadow-sm">
+          <div className="relative w-full h-64 md:h-96 mb-12 rounded-sm overflow-hidden shadow-sm">
             <Image
-              src="/images/community.jpeg"
+              src="/images/community-new.jpg"
               alt="Wayne's World EFT community — Lebanon, NH"
               fill
-              className="object-cover object-top"
+              className="object-cover object-center"
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
