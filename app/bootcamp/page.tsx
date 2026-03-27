@@ -130,7 +130,7 @@ export default function BootcampPage() {
             &ldquo;The naturally occurring mentorship that develops between the regulars
             holds you psychologically accountable and motivated to stay focused.&rdquo;
           </p>
-          <p className="text-brand-red font-semibold text-sm">— Kylie M.</p>
+          <p className="text-gray-300 font-semibold text-sm">— Kylie M.</p>
         </div>
       </section>
 

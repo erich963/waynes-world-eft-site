@@ -51,11 +51,11 @@ export default function TestimonialsCarousel() {
         <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-6 italic text-center">
           &ldquo;{testimonials[current].quote}&rdquo;
         </p>
-        <p className="text-white font-semibold text-sm text-center uppercase tracking-widest">
+        <p className="text-gray-300 font-semibold text-sm text-center uppercase tracking-widest">
           — {testimonials[current].name}
         </p>
         {testimonials[current].title && (
-          <p className="text-gray-500 text-xs text-center mt-1 normal-case tracking-normal">
+          <p className="text-gray-400 text-xs text-center mt-1 normal-case tracking-normal">
             {testimonials[current].title}
           </p>
         )}
