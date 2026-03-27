@@ -90,14 +90,14 @@ export default function BootcampPage() {
                 key={p.label}
                 className={`flex justify-between items-center px-8 py-5 ${
                   i !== pricing.length - 1 ? 'border-b border-gray-100' : ''
-                } ${p.price === 'FREE' ? 'bg-brand-green text-white' : ''}`}
+                } ${p.price === 'FREE' ? 'bg-brand-red text-white' : ''}`}
               >
                 <span className={`font-semibold ${p.price === 'FREE' ? 'text-white' : 'text-gray-800'}`}>
                   {p.label}
                 </span>
                 <span
                   className={`text-xl font-bold ${
-                    p.price === 'FREE' ? 'text-white' : 'text-brand-green'
+                    p.price === 'FREE' ? 'text-white' : 'text-brand-red'
                   }`}
                 >
                   {p.price}
@@ -118,7 +118,7 @@ export default function BootcampPage() {
             &ldquo;The naturally occurring mentorship that develops between the regulars
             holds you psychologically accountable and motivated to stay focused.&rdquo;
           </p>
-          <p className="text-brand-green font-semibold text-sm">— Kylie M.</p>
+          <p className="text-brand-red font-semibold text-sm">— Kylie M.</p>
         </div>
       </section>
 

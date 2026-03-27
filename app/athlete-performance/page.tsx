@@ -69,7 +69,7 @@ export default function AthletePerformancePage() {
               <ul className="space-y-3">
                 {levels.map((l) => (
                   <li key={l} className="flex items-center gap-3 py-3 border-b border-gray-100">
-                    <span className="w-2 h-2 rounded-full bg-brand-green shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-brand-red shrink-0" />
                     <span className="text-gray-700">{l}</span>
                   </li>
                 ))}
@@ -87,7 +87,7 @@ export default function AthletePerformancePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {focusAreas.map((f) => (
               <div key={f.label} className="bg-white p-8 rounded-sm shadow-sm">
-                <div className="w-10 h-1 bg-brand-green mb-4" />
+                <div className="w-10 h-1 bg-brand-red mb-4" />
                 <h3 className="text-xl font-bold mb-2">{f.label}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{f.description}</p>
               </div>
@@ -99,7 +99,7 @@ export default function AthletePerformancePage() {
       {/* Coach Cred */}
       <section className="section-dark">
         <div className="container-content max-w-3xl text-center">
-          <p className="text-brand-green text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="text-brand-red text-sm font-semibold uppercase tracking-widest mb-4">
             Coaching Pedigree
           </p>
           <h2 className="section-title-white mb-6">

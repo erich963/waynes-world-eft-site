@@ -76,7 +76,7 @@ export default function WellnessPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {includes.map((item) => (
               <div key={item.title} className="bg-white p-8 rounded-sm shadow-sm">
-                <div className="w-10 h-1 bg-brand-green mb-4" />
+                <div className="w-10 h-1 bg-brand-red mb-4" />
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-sm">{item.description}</p>
               </div>
@@ -99,7 +99,7 @@ export default function WellnessPage() {
                 }`}
               >
                 <span className="font-semibold text-gray-800">{p.label}</span>
-                <span className="text-xl font-bold text-brand-green">{p.price}</span>
+                <span className="text-xl font-bold text-brand-red">{p.price}</span>
               </div>
             ))}
           </div>

@@ -98,13 +98,13 @@ export default function HomePage() {
       </section>
 
       {/* Mission bar */}
-      <section className="bg-brand-green text-white py-8 px-6">
+      <section className="bg-brand-red text-white py-8 px-6">
         <div className="container-content text-center">
           <p className="text-lg font-medium max-w-3xl mx-auto">
             &ldquo;My mission at Wayne&apos;s World EFT is to educate you on the advantages
             of a lifestyle of good health and individual fitness.&rdquo;
           </p>
-          <p className="text-sm mt-2 text-green-200">— Wayne Burwell, Founder</p>
+          <p className="text-sm mt-2 text-red-200">— Wayne Burwell, Founder</p>
         </div>
       </section>
 
@@ -119,15 +119,15 @@ export default function HomePage() {
             {audiences.map((a) => (
               <div
                 key={a.title}
-                className="border border-gray-200 p-8 rounded-sm hover:border-brand-green transition-colors group"
+                className="border border-gray-200 p-8 rounded-sm hover:border-brand-red transition-colors group"
               >
-                <h3 className="text-xl font-bold mb-3 group-hover:text-brand-green transition-colors">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-brand-red transition-colors">
                   {a.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-6">{a.description}</p>
                 <Link
                   href={a.href}
-                  className="text-brand-green text-sm font-semibold hover:underline"
+                  className="text-brand-red text-sm font-semibold hover:underline"
                 >
                   {a.cta} →
                 </Link>
@@ -147,11 +147,11 @@ export default function HomePage() {
               <Link
                 key={s.title}
                 href={s.href}
-                className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md hover:border-l-4 hover:border-brand-green transition-all group flex gap-5"
+                className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md hover:border-l-4 hover:border-brand-red transition-all group flex gap-5"
               >
                 <span className="text-3xl">{s.icon}</span>
                 <div>
-                  <h3 className="font-bold text-lg mb-2 group-hover:text-brand-green transition-colors">
+                  <h3 className="font-bold text-lg mb-2 group-hover:text-brand-red transition-colors">
                     {s.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
@@ -165,7 +165,7 @@ export default function HomePage() {
       {/* Testimonials */}
       <section className="section-dark">
         <div className="container-content">
-          <p className="text-brand-green text-sm font-semibold uppercase tracking-widest text-center mb-3">
+          <p className="text-brand-red text-sm font-semibold uppercase tracking-widest text-center mb-3">
             What Members Say
           </p>
           <h2 className="section-title-white text-center mb-12">Real Results</h2>
@@ -175,7 +175,7 @@ export default function HomePage() {
                 <p className="text-gray-300 text-lg leading-relaxed mb-4 italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
-                <p className="text-brand-green font-semibold text-sm">— {t.name}</p>
+                <p className="text-brand-red font-semibold text-sm">— {t.name}</p>
               </div>
             ))}
           </div>

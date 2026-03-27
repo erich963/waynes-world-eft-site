@@ -75,7 +75,7 @@ export default function PersonalTrainingPage() {
               <ul className="space-y-2">
                 {['Custom programming', 'One-on-one coaching', 'Progress tracking', 'Flexible scheduling'].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-gray-700">
-                    <span className="w-2 h-2 rounded-full bg-brand-green shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-brand-red shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -87,7 +87,7 @@ export default function PersonalTrainingPage() {
               <div className="space-y-3">
                 {goals.map((g) => (
                   <div key={g} className="flex items-center gap-3 py-3 border-b border-gray-100">
-                    <span className="text-brand-green font-bold text-lg">→</span>
+                    <span className="text-brand-red font-bold text-lg">→</span>
                     <span className="text-gray-700">{g}</span>
                   </div>
                 ))}
@@ -104,9 +104,9 @@ export default function PersonalTrainingPage() {
           <h2 className="section-title text-center mb-12">Meet the Coaches</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {trainers.map((t) => (
-              <div key={t.name} className="bg-white p-8 rounded-sm shadow-sm border-l-4 border-brand-green">
+              <div key={t.name} className="bg-white p-8 rounded-sm shadow-sm border-l-4 border-brand-red">
                 <h3 className="text-xl font-bold mb-1">{t.name}</h3>
-                <p className="text-brand-green text-sm font-medium mb-4">{t.certs}</p>
+                <p className="text-brand-red text-sm font-medium mb-4">{t.certs}</p>
                 <p className="text-gray-600 leading-relaxed text-sm">{t.bio}</p>
               </div>
             ))}

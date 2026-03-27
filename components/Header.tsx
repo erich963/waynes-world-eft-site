@@ -22,15 +22,18 @@ export default function Header() {
       <div className="container-content flex items-center justify-between h-16 px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
-          <Image
-            src="/images/logo.png"
-            alt="Wayne's World Elite Fitness Training"
-            width={48}
-            height={48}
-            className="object-contain"
-          />
-          <span className="text-white font-bold text-lg leading-tight hidden sm:block">
-            Wayne&apos;s World <span className="text-brand-green">EFT</span>
+          <div className="bg-white rounded-sm p-1.5 flex items-center justify-center">
+            <Image
+              src="/images/logo.png"
+              alt="Wayne's World Elite Fitness Training"
+              width={40}
+              height={40}
+              className="object-contain"
+              priority
+            />
+          </div>
+          <span className="text-white font-bold text-lg leading-tight hidden sm:block tracking-tight">
+            Wayne&apos;s World <span className="text-brand-red">EFT</span>
           </span>
         </Link>
 
@@ -42,7 +45,7 @@ export default function Header() {
               href={href}
               className={`text-sm font-medium transition-colors duration-150 ${
                 pathname === href
-                  ? 'text-brand-green'
+                  ? 'text-brand-red'
                   : 'text-gray-300 hover:text-white'
               }`}
             >
@@ -96,7 +99,7 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)}
                 className={`text-sm font-medium transition-colors ${
                   pathname === href
-                    ? 'text-brand-green'
+                    ? 'text-brand-red'
                     : 'text-gray-300 hover:text-white'
                 }`}
               >

@@ -56,7 +56,7 @@ export default function AboutPage() {
             &ldquo;My mission at Wayne&apos;s World EFT is to educate you on the advantages
             of a lifestyle of good health and individual fitness.&rdquo;
           </p>
-          <p className="text-brand-green font-semibold mb-6">— Wayne Burwell</p>
+          <p className="text-brand-red font-semibold mb-6">— Wayne Burwell</p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Wayne&apos;s World Elite Fitness Training has been serving the Lebanon, NH
             and Upper Valley community since 1999. What started as a personal
@@ -81,7 +81,7 @@ export default function AboutPage() {
             {trainers.map((t) => (
               <div key={t.name} className="bg-white p-8 rounded-sm shadow-sm">
                 <h3 className="text-xl font-bold mb-1">{t.name}</h3>
-                <p className="text-brand-green text-sm font-medium mb-4">{t.certs}</p>
+                <p className="text-brand-red text-sm font-medium mb-4">{t.certs}</p>
                 <p className="text-gray-600 leading-relaxed text-sm">{t.bio}</p>
               </div>
             ))}

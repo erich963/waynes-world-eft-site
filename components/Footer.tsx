@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="text-white font-bold text-lg mb-1">
-              Wayne&apos;s World <span className="text-brand-green">EFT</span>
+              Wayne&apos;s World <span className="text-brand-red">EFT</span>
             </p>
             <p className="text-sm leading-relaxed mt-3">
               Elite fitness training in Lebanon, NH. Built around results,

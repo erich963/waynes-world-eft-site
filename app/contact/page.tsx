@@ -41,7 +41,7 @@ export default function ContactPage() {
                     id="name"
                     name="name"
                     required
-                    className="w-full border border-gray-300 rounded-sm px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-green transition-colors"
+                    className="w-full border border-gray-300 rounded-sm px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-red transition-colors"
                     placeholder="Your name"
                   />
                 </div>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                     id="email"
                     name="email"
                     required
-                    className="w-full border border-gray-300 rounded-sm px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-green transition-colors"
+                    className="w-full border border-gray-300 rounded-sm px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-red transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <select
                     id="interest"
                     name="interest"
-                    className="w-full border border-gray-300 rounded-sm px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-green transition-colors"
+                    className="w-full border border-gray-300 rounded-sm px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-red transition-colors"
                   >
                     <option value="">Select a program...</option>
                     <option value="bootcamp">Bootcamp</option>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                     id="message"
                     name="message"
                     rows={5}
-                    className="w-full border border-gray-300 rounded-sm px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-green transition-colors resize-none"
+                    className="w-full border border-gray-300 rounded-sm px-4 py-3 text-gray-900 focus:outline-none focus:border-brand-red transition-colors resize-none"
                     placeholder="Tell us about your goals or ask any questions..."
                   />
                 </div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                       href="https://www.instagram.com/waynesworldeft"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-brand-green transition-colors font-medium text-sm"
+                      className="text-gray-600 hover:text-brand-red transition-colors font-medium text-sm"
                     >
                       Instagram @waynesworldeft
                     </a>
@@ -137,16 +137,16 @@ export default function ContactPage() {
                       href="https://www.facebook.com/WaynesWorldEFT"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-brand-green transition-colors font-medium text-sm"
+                      className="text-gray-600 hover:text-brand-red transition-colors font-medium text-sm"
                     >
                       Facebook WaynesWorldEFT
                     </a>
                   </div>
                 </div>
 
-                <div className="bg-brand-green text-white p-6 rounded-sm">
+                <div className="bg-brand-red text-white p-6 rounded-sm">
                   <h3 className="font-bold text-lg mb-2">First Class Is Free</h3>
-                  <p className="text-green-100 text-sm leading-relaxed">
+                  <p className="text-red-100 text-sm leading-relaxed">
                     Try a bootcamp class with zero commitment. Show up, work
                     hard, and see what Wayne&apos;s World is about.
                   </p>
