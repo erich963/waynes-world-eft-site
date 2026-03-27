@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "About Wayne's World EFT | Lebanon, NH",
@@ -78,7 +79,17 @@ export default function AboutPage() {
       <section className="section-gray">
         <div className="container-content">
           <p className="section-label text-center">The Team</p>
-          <h2 className="section-title text-center mb-12">Our Coaches</h2>
+          <h2 className="section-title text-center mb-10">Our Coaches</h2>
+
+          {/* Community photo */}
+          <div className="relative w-full h-64 md:h-80 mb-12 rounded-sm overflow-hidden shadow-sm">
+            <Image
+              src="/images/community.jpeg"
+              alt="Wayne's World EFT community — Lebanon, NH"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {trainers.map((t) => (
               <div key={t.name} className="bg-white p-8 rounded-sm shadow-sm border-t-4 border-brand-red">

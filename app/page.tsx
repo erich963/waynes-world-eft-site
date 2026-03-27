@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const services = [
   {
@@ -71,34 +72,52 @@ const audiences = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-white py-28 px-6 border-b border-gray-100">
-        <div className="container-content max-w-4xl">
-          <p className="section-label">Lebanon, NH · Upper Valley</p>
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
-            Elite Fitness Training<br />in the Upper Valley
-          </h1>
-          <p className="text-gray-600 text-xl mb-8 max-w-2xl leading-relaxed">
-            Personal training, bootcamps, and athlete performance coaching —
-            built around results, accountability, and real community.
-          </p>
-          <p className="text-sm text-gray-400 mb-10 italic">
-            Trusted by professional athletes, Olympians, high school and college athletes,
-            and adults across the Upper Valley.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/contact" className="btn-primary">
-              Get Started
-            </Link>
-            <Link href="/bootcamp" className="btn-outline">
-              See Bootcamp
-            </Link>
+      {/* Hero — split layout with Wayne's photo */}
+      <section className="bg-white border-b border-gray-100">
+        <div className="container-content">
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[560px]">
+            {/* Text */}
+            <div className="flex flex-col justify-center py-20 px-6 lg:pr-16">
+              <p className="section-label">Lebanon, NH · Upper Valley</p>
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
+                Elite Fitness Training<br />in the Upper Valley
+              </h1>
+              <p className="text-gray-600 text-xl mb-8 max-w-xl leading-relaxed">
+                Personal training, bootcamps, and athlete performance coaching —
+                built around results, accountability, and real community.
+              </p>
+              <p className="text-sm text-gray-400 mb-10 italic">
+                Trusted by professional athletes, Olympians, high school and college athletes,
+                and adults across the Upper Valley.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/contact" className="btn-primary">
+                  Get Started
+                </Link>
+                <Link href="/bootcamp" className="btn-outline">
+                  See Bootcamp
+                </Link>
+              </div>
+            </div>
+
+            {/* Photo */}
+            <div className="relative min-h-[400px] lg:min-h-0">
+              <Image
+                src="/images/hero-wayne.jpeg"
+                alt="Wayne Burwell — Wayne's World Elite Fitness Training"
+                fill
+                className="object-cover"
+                priority
+              />
+              {/* Red accent bar on left edge */}
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-brand-red" />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Mission quote */}
-      <section className="bg-gray-50 py-12 px-6 border-l-0">
+      <section className="bg-gray-50 py-12 px-6">
         <div className="container-content max-w-3xl">
           <div className="border-l-4 border-brand-red pl-8">
             <p className="text-2xl font-medium text-gray-900 leading-relaxed">
@@ -166,13 +185,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Community photo + testimonials */}
       <section className="section-dark">
         <div className="container-content">
           <p className="text-brand-red text-sm font-semibold uppercase tracking-widest text-center mb-3">
-            What Members Say
+            Our Community
           </p>
-          <h2 className="section-title-white text-center mb-12">Real Results</h2>
+          <h2 className="section-title-white text-center mb-10">
+            Real People. Real Results.
+          </h2>
+
+          {/* Group photo */}
+          <div className="relative w-full h-72 md:h-96 mb-12 rounded-sm overflow-hidden">
+            <Image
+              src="/images/community.jpeg"
+              alt="Wayne's World EFT community — Lebanon, NH"
+              fill
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-brand-dark/40" />
+            <div className="absolute bottom-4 left-6">
+              <p className="text-white text-sm font-semibold uppercase tracking-widest">Lebanon, NH · Est. 1999</p>
+            </div>
+          </div>
+
+          {/* Testimonials */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((t) => (
               <div key={t.name} className="bg-brand-gray p-8 rounded-sm border border-gray-700">

@@ -19,22 +19,29 @@ export default function Header() {
 
   return (
     <header className="bg-brand-dark sticky top-0 z-50 shadow-md">
-      <div className="container-content flex items-center justify-between h-16 px-6">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0">
-          <div className="bg-white rounded-sm p-1.5 flex items-center justify-center">
+      <div className="container-content flex items-center justify-between h-28 px-6">
+        {/* Logo — full wordmark on md+, shield only on mobile */}
+        <Link href="/" className="flex items-center shrink-0">
+          <div className="bg-white rounded-sm p-2 hidden md:flex items-center justify-center">
             <Image
-              src="/images/logo.png"
+              src="/images/logo-full.png"
               alt="Wayne's World Elite Fitness Training"
-              width={40}
-              height={40}
+              width={300}
+              height={72}
               className="object-contain"
               priority
             />
           </div>
-          <span className="text-white font-bold text-lg leading-tight hidden sm:block tracking-tight">
-            Wayne&apos;s World <span className="text-brand-red">EFT</span>
-          </span>
+          <div className="bg-white rounded-sm p-2 flex items-center justify-center md:hidden">
+            <Image
+              src="/images/logo.png"
+              alt="Wayne's World Elite Fitness Training"
+              width={88}
+              height={88}
+              className="object-contain"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Nav */}
